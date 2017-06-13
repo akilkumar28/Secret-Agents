@@ -34,6 +34,18 @@ class MissionDetailsVC: UIViewController {
     }
 
     @IBAction func rejectPrsd(_ sender: Any) {
+        
+        databaseRef.child("Users").child(Auth.auth().currentUser!.uid).child("missions").child(mission.key).removeValue()
+        
+        
+        storageref.child("missionImages").child("\(mission.uniqueName!).jpg").delete { (error) in
+            print("\(error as Any)")
+        }
+        
+        self.navigationController?.popViewController(animated: true)
+        
+ 
+        
     }
   
 }

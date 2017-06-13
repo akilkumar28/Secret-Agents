@@ -44,6 +44,19 @@ class HomeVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
             }
         }
         
+        databaseRef.child("Users").child(Auth.auth().currentUser!.uid).child("missions").observe(.childRemoved) { (snapshot:DataSnapshot) in
+            
+            var index = 0
+            for mission in self.missions {
+                if mission.key == snapshot.key {
+                   self.missions.remove(at: index)
+                }
+                index += 1
+            }
+            self.myTableView.reloadData()
+            
+        }
+        
         
         
         
