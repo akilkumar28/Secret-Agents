@@ -64,6 +64,18 @@ class HomeVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
         cell?.textLabel?.text  = missions[indexPath.row].uniqueName
         return cell!
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let mission = missions[indexPath.row]
+        performSegue(withIdentifier: "missionDetails", sender: mission)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? MissionDetailsVC {
+            destination.mission = sender as! Mission
+        }
+    }
+    
 
    
 
