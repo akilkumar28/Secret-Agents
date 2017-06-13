@@ -28,7 +28,7 @@
                                     <constraint firstAttribute="height" constant="124" id="P8x-La-4mR"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Email Id" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Ux-Uh-EWL">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="test@gmail.com" borderStyle="roundedRect" placeholder="Enter Your Email Id" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Ux-Uh-EWL">
                                 <rect key="frame" x="88" y="189" width="271" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -39,7 +39,7 @@
                                     <action selector="editingEnded:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="fVP-12-nAM"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YhL-do-P3E">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123456" borderStyle="roundedRect" placeholder="Enter Your Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YhL-do-P3E">
                                 <rect key="frame" x="88" y="270" width="271" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -163,17 +163,72 @@
                                 <state key="normal" title="Choose Agent">
                                     <color key="titleColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="chooseAgentClicked:" destination="T6Z-zU-DXh" eventType="touchUpInside" id="BoW-CF-E9j"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.47450980392156861" green="0.47450980392156861" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Send Mission" id="Xd1-UO-YgG">
-                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="9zk-n4-FBb"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="9zk-n4-FBb">
+                            <connections>
+                                <action selector="cameraBtnTapped:" destination="T6Z-zU-DXh" id="0R0-N7-Mxb"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="chooseAgentBtn" destination="Lm4-YD-pXj" id="5va-jV-UjG"/>
+                        <outlet property="missionDescTxtFld" destination="Yzz-ja-pRJ" id="b8y-7a-FAq"/>
+                        <outlet property="myImageView" destination="wdh-De-HTS" id="daJ-y6-hlO"/>
+                        <segue destination="gQ4-Dv-5NQ" kind="show" identifier="chooseAgents" id="bUX-oK-orS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tkQ-MT-B2k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2557.5999999999999" y="37.331334332833585"/>
+        </scene>
+        <!--Choose AgentsVC-->
+        <scene sceneID="j3e-Ei-UP3">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="gQ4-Dv-5NQ" customClass="ChooseAgentsVC" customModule="Secret_Agents" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QKd-GR-nwe"/>
+                        <viewControllerLayoutGuide type="bottom" id="MJw-54-cQj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ilt-bk-HWY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WAG-5p-UIO">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="7gn-Uh-TA1">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7gn-Uh-TA1" id="lJ6-3n-JTY">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="gQ4-Dv-5NQ" id="o4I-pj-FIY"/>
+                                    <outlet property="delegate" destination="gQ4-Dv-5NQ" id="NnP-8q-Ngr"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.47450980392156861" green="0.47450980392156861" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="mytableView" destination="WAG-5p-UIO" id="nic-rP-bSC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ltB-1r-A7j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3357.5999999999999" y="36.431784107946029"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pJS-2v-OzX">
