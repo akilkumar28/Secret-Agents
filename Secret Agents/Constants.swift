@@ -10,3 +10,4 @@ import Foundation
 import Firebase
 
 let databaseRef = Database.database().reference()
+let storageref = Storage.storage().reference()

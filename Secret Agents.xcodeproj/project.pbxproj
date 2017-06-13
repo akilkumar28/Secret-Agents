@@ -19,6 +19,9 @@
 		892918511EF0098D00424F48 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892918501EF0098D00424F48 /* Constants.swift */; };
 		89CE0A8F1EF00F6C0086E167 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CE0A8E1EF00F6C0086E167 /* HomeVC.swift */; };
 		89CE0A911EF0138A0086E167 /* SendMissionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CE0A901EF0138A0086E167 /* SendMissionVC.swift */; };
+		89CE0A931EF01DFD0086E167 /* ChooseAgentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CE0A921EF01DFD0086E167 /* ChooseAgentsVC.swift */; };
+		89CE0A951EF0350F0086E167 /* MissionDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CE0A941EF0350F0086E167 /* MissionDetailsVC.swift */; };
+		89CE0A971EF043CA0086E167 /* PickAgentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CE0A961EF043CA0086E167 /* PickAgentVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,9 @@
 		892918501EF0098D00424F48 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		89CE0A8E1EF00F6C0086E167 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		89CE0A901EF0138A0086E167 /* SendMissionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendMissionVC.swift; sourceTree = "<group>"; };
+		89CE0A921EF01DFD0086E167 /* ChooseAgentsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseAgentsVC.swift; sourceTree = "<group>"; };
+		89CE0A941EF0350F0086E167 /* MissionDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissionDetailsVC.swift; sourceTree = "<group>"; };
+		89CE0A961EF043CA0086E167 /* PickAgentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickAgentVC.swift; sourceTree = "<group>"; };
 		B8E45D6EA1BA67048DB9E3E7 /* Pods-Secret Agents.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Secret Agents.release.xcconfig"; path = "Pods/Target Support Files/Pods-Secret Agents/Pods-Secret Agents.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,6 +108,9 @@
 				892918361EEFFC0C00424F48 /* MainVC.swift */,
 				89CE0A8E1EF00F6C0086E167 /* HomeVC.swift */,
 				89CE0A901EF0138A0086E167 /* SendMissionVC.swift */,
+				89CE0A921EF01DFD0086E167 /* ChooseAgentsVC.swift */,
+				89CE0A941EF0350F0086E167 /* MissionDetailsVC.swift */,
+				89CE0A961EF043CA0086E167 /* PickAgentVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -266,8 +275,11 @@
 				892918511EF0098D00424F48 /* Constants.swift in Sources */,
 				8929184C1EF0084500424F48 /* Agent.swift in Sources */,
 				892918371EEFFC0C00424F48 /* MainVC.swift in Sources */,
+				89CE0A971EF043CA0086E167 /* PickAgentVC.swift in Sources */,
+				89CE0A931EF01DFD0086E167 /* ChooseAgentsVC.swift in Sources */,
 				89CE0A8F1EF00F6C0086E167 /* HomeVC.swift in Sources */,
 				8929184E1EF0085000424F48 /* Mission.swift in Sources */,
+				89CE0A951EF0350F0086E167 /* MissionDetailsVC.swift in Sources */,
 				892918351EEFFC0C00424F48 /* AppDelegate.swift in Sources */,
 				89CE0A911EF0138A0086E167 /* SendMissionVC.swift in Sources */,
 			);
