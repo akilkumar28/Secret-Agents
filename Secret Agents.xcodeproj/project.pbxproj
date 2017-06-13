@@ -9,11 +9,16 @@
 /* Begin PBXBuildFile section */
 		30A58D0A1AEE947A19EC50A0 /* Pods_Secret_Agents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 356C594E5D9AF4F3C61DE618 /* Pods_Secret_Agents.framework */; };
 		892918351EEFFC0C00424F48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892918341EEFFC0C00424F48 /* AppDelegate.swift */; };
-		892918371EEFFC0C00424F48 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892918361EEFFC0C00424F48 /* ViewController.swift */; };
+		892918371EEFFC0C00424F48 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892918361EEFFC0C00424F48 /* MainVC.swift */; };
 		8929183A1EEFFC0C00424F48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 892918381EEFFC0C00424F48 /* Main.storyboard */; };
 		8929183C1EEFFC0C00424F48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8929183B1EEFFC0C00424F48 /* Assets.xcassets */; };
 		8929183F1EEFFC0C00424F48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8929183D1EEFFC0C00424F48 /* LaunchScreen.storyboard */; };
 		892918471EEFFC7A00424F48 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 892918461EEFFC7A00424F48 /* GoogleService-Info.plist */; };
+		8929184C1EF0084500424F48 /* Agent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8929184B1EF0084500424F48 /* Agent.swift */; };
+		8929184E1EF0085000424F48 /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8929184D1EF0085000424F48 /* Mission.swift */; };
+		892918511EF0098D00424F48 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892918501EF0098D00424F48 /* Constants.swift */; };
+		89CE0A8F1EF00F6C0086E167 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CE0A8E1EF00F6C0086E167 /* HomeVC.swift */; };
+		89CE0A911EF0138A0086E167 /* SendMissionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CE0A901EF0138A0086E167 /* SendMissionVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,12 +26,17 @@
 		356C594E5D9AF4F3C61DE618 /* Pods_Secret_Agents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Secret_Agents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		892918311EEFFC0C00424F48 /* Secret Agents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Secret Agents.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		892918341EEFFC0C00424F48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		892918361EEFFC0C00424F48 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		892918361EEFFC0C00424F48 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		892918391EEFFC0C00424F48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8929183B1EEFFC0C00424F48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8929183E1EEFFC0C00424F48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		892918401EEFFC0C00424F48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		892918461EEFFC7A00424F48 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8929184B1EF0084500424F48 /* Agent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Agent.swift; sourceTree = "<group>"; };
+		8929184D1EF0085000424F48 /* Mission.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
+		892918501EF0098D00424F48 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		89CE0A8E1EF00F6C0086E167 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		89CE0A901EF0138A0086E167 /* SendMissionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendMissionVC.swift; sourceTree = "<group>"; };
 		B8E45D6EA1BA67048DB9E3E7 /* Pods-Secret Agents.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Secret Agents.release.xcconfig"; path = "Pods/Target Support Files/Pods-Secret Agents/Pods-Secret Agents.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,8 +82,11 @@
 		892918331EEFFC0C00424F48 /* Secret Agents */ = {
 			isa = PBXGroup;
 			children = (
+				8929184F1EF0098200424F48 /* Extras */,
+				8929184A1EEFFE4C00424F48 /* Model */,
+				892918491EEFFE4700424F48 /* View */,
+				892918481EEFFE3A00424F48 /* Controller */,
 				892918341EEFFC0C00424F48 /* AppDelegate.swift */,
-				892918361EEFFC0C00424F48 /* ViewController.swift */,
 				892918381EEFFC0C00424F48 /* Main.storyboard */,
 				8929183B1EEFFC0C00424F48 /* Assets.xcassets */,
 				8929183D1EEFFC0C00424F48 /* LaunchScreen.storyboard */,
@@ -81,6 +94,40 @@
 				892918461EEFFC7A00424F48 /* GoogleService-Info.plist */,
 			);
 			path = "Secret Agents";
+			sourceTree = "<group>";
+		};
+		892918481EEFFE3A00424F48 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				892918361EEFFC0C00424F48 /* MainVC.swift */,
+				89CE0A8E1EF00F6C0086E167 /* HomeVC.swift */,
+				89CE0A901EF0138A0086E167 /* SendMissionVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		892918491EEFFE4700424F48 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		8929184A1EEFFE4C00424F48 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8929184B1EF0084500424F48 /* Agent.swift */,
+				8929184D1EF0085000424F48 /* Mission.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		8929184F1EF0098200424F48 /* Extras */ = {
+			isa = PBXGroup;
+			children = (
+				892918501EF0098D00424F48 /* Constants.swift */,
+			);
+			name = Extras;
 			sourceTree = "<group>";
 		};
 		C2B9D5D25AC8BFF0C2312538 /* Frameworks */ = {
@@ -216,8 +263,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				892918371EEFFC0C00424F48 /* ViewController.swift in Sources */,
+				892918511EF0098D00424F48 /* Constants.swift in Sources */,
+				8929184C1EF0084500424F48 /* Agent.swift in Sources */,
+				892918371EEFFC0C00424F48 /* MainVC.swift in Sources */,
+				89CE0A8F1EF00F6C0086E167 /* HomeVC.swift in Sources */,
+				8929184E1EF0085000424F48 /* Mission.swift in Sources */,
 				892918351EEFFC0C00424F48 /* AppDelegate.swift in Sources */,
+				89CE0A911EF0138A0086E167 /* SendMissionVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +435,7 @@
 				892918451EEFFC0C00424F48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
